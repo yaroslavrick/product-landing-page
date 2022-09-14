@@ -1,11 +1,14 @@
-/** global element styling **/
-
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+:root {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -50,6 +53,10 @@ a {
   display: flex;
 }
 
+.grid_react-logo {
+  width: 50px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -80,10 +87,11 @@ header {
 }
 
 .logo > img {
-  width: 100%;
+  width: 50px;
   height: 100%;
   max-width: 300px;
-  display: flex;
+  /* display: flex; */
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: center;

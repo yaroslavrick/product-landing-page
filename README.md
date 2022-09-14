@@ -4,7 +4,7 @@
 
 original page: https://product-landing-page.freecodecamp.rocks/
 
-[my page ](https://yaroslavrick.github.io/product-landing-page/)[Yaroslav Yenkala responsive page](https://yaroslavrick.github.io/product-landing-page/)
+My variation: [Yaroslav Yenkala responsive page](https://yaroslavrick.github.io/product-landing-page/)
 
 
 

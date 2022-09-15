@@ -13,120 +13,130 @@
 
   <body>
     <div id="page-wrapper">
-      <header id="header">
-        <div class="logo">
-          <img id="header-img" src="img/javascript-logo.png" alt="original trombones logo" />
+      <header id="header" class="header">
+        <div class="header__logo container">
+          <img class="logo__img" id="header-img" src="img/javascript-logo.png" alt="original trombones logo" />
         </div>
-
-        <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#react">React</a></li>
-            <li><a class="nav-link" href="#angular">Angular</a></li>
-            <li><a class="nav-link" href="#vue">Vue</a></li>
-          </ul>
-        </nav>
+        <div class="header-nav__menu container">
+          <nav id="nav-bar" class="menu__nav-bar">
+            <ul class="nav-bar__ul-bar">
+              <li class="ul-bar__li"><a class="nav-link" href="#react">React</a></li>
+              <li class="ul-bar__li"><a class="nav-link" href="#angular">Angular</a></li>
+              <li class="ul-bar__li"><a class="nav-link" href="#vue">Vue</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
+      <main class="main">
+        <div class="container">
+          <section id="title">
+            <h1>JavaScript Frameworks</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+              <input id="submit" type="submit" value="Get Started" class="btn" />
+            </form>
+          </section>
+          <div class="container">
+            <section id="frameworks">
+              <div class="grid">
+                <div class="icon">
+                  <img src="img/react-icon.svg" alt="React logo" class="grid_react-logo logo">
+                </div>
+                <div class="desc">
+                  <h2>React</h2>
+                  <p>
+                    React is a free and open-source front-end JavaScript library
+                    for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook)
+                    and a community of individual developers and companies. React can be used as a base in the
+                    development of single-page, mobile, or server-rendered applications with frameworks like Next.js.
+                    However, React is only concerned with state management and rendering that state to the DOM, so
+                    creating React applications usually requires the use of additional libraries for routing, as well as
+                    certain client-side functionality.
+                  </p>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="icon">
+                  <img src="img/vue_js_logo_2.svg" alt="Vue logo" class="grid_vue-logo logo">
+                </div>
+                <div class="desc">
+                  <h2>Vue</h2>
+                  <p>
+                    Vue.js features an incrementally adaptable architecture that focuses on declarative rendering and
+                    component composition. The core library is focused on the view layer only. Advanced features
+                    required for complex applications such as routing, state management and build tooling are offered
+                    via officially maintained supporting libraries and packages.
 
-      <div class="container"></div>
-
-      <section id="hero">
-        <h2>JavaScript Frameworks</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input name="email" id="email" type="email" placeholder="Enter your email address" required />
-          <input id="submit" type="submit" value="Get Started" class="btn" />
-        </form>
-      </section>
-
-      <div class="container">
-        <section id="features">
-          <div class="grid">
-            <div class="icon"><img src="img/react_logo.png" alt="React logo" class="grid_react-logo logo"></div>
-            <div class="desc">
-              <h2>React</h2>
-              <p>
-                React is a JavaScript framework developed by Facebook that simplifies the process of building
-                interactive UIs. It is the base of React Native, an adjacent framework for building mobile applications.
-
-                Both frameworks have a one-way data flow, which is considered more intuitive than bi-directional data
-                binding. Hot reload is another popular feature of the React frameworks allowing developers to
-                immediately see changes as they are applied.
-              </p>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-            <div class="desc">
-              <h2>Fast Shipping</h2>
-              <p>
-                We make sure you recieve your trombone as soon as we have
-                finished making it. We also provide free returns if you are not
-                satisfied.
-              </p>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="icon">
-              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-            </div>
-            <div class="desc">
-              <h2>Quality Assurance</h2>
-              <p>
-                For every purchase you make, we will ensure there are no damages
-                or faults and we will check and test the pitch of your
-                instrument.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="how-it-works">
-          <iframe id="video" height="315"
-            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
-            allowfullscreen></iframe>
-        </section>
-        <section id="pricing">
-          <div class="product" id="tenor">
-            <div class="level">Tenor Trombone</div>
-            <h2>$600</h2>
-            <ol>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-          <div class="product" id="bass">
-            <div class="level">Bass Trombone</div>
-            <h2>$900</h2>
-            <ol>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-          <div class="product" id="valve">
-            <div class="level">Valve Trombone</div>
-            <h2>$1200</h2>
-            <ol>
-              <li>Plays similar to a Trumpet</li>
-              <li>Great for Jazz Bands</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-        </section>
-        <footer>
-          <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <span>Copyright 2016, Original Trombones</span>
-        </footer>
-      </div>
+                    Vue.js allows for extending HTML with HTML attributes called directives. The directives offer
+                    functionality to HTML applications, and come as either built-in or user defined directives.
+                  </p>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="icon">
+                  <img src="img/angular_full_color_logo.svg" alt="Angular logo" class="grid_angular-logo logo">
+                </div>
+                <div class="desc">
+                  <h2>Angular</h2>
+                  <p>
+                    Angular is a TypeScript-based free and
+                    open-source web application framework led by the Angular Team at Google and by a community of
+                    individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!-- <section id="how-it-works">
+              <iframe id="video" height="315"
+                src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section id="pricing">
+              <div class="product" id="tenor">
+                <div class="level">Tenor Trombone</div>
+                <h2>$600</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+              </div>
+              <div class="product" id="bass">
+                <div class="level">Bass Trombone</div>
+                <h2>$900</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+              </div>
+              <div class="product" id="valve">
+                <div class="level">Valve Trombone</div>
+                <h2>$1200</h2>
+                <ol>
+                  <li>Plays similar to a Trumpet</li>
+                  <li>Great for Jazz Bands</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+              </div>
+            </section> -->
+      </main>
+      <footer class="footer container">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>All information is taken from <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></span>
+      </footer>
+    </div>
+    </div>
     </div>
   </body>
 

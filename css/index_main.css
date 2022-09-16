@@ -25,6 +25,7 @@
 .main-container__section-grid {
   display: grid;
   grid-template-columns: 100%;
+  gap: 5px;
 }
 
 .section-grid__grid {
@@ -44,8 +45,7 @@
 
 @media (min-width: 500px) {
   .main-container__section-grid {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
   .section-grid__grid {
     grid-template-columns: 25% 75%;

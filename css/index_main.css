@@ -1,3 +1,19 @@
 .logo {
   width: 50px;
 }
+
+.main {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.menu__nav-bar {
+  font-size: 1.2rem;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* margin-left: auto; */
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}

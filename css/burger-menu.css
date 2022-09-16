@@ -1,0 +1,11 @@
+#burger-checkbox {
+  display: none;
+}
+
+#nav-bar {
+  display: none;
+}
+
+#burber-checkbox:checked ~ #nav-bar {
+  display: initial;
+}

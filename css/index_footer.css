@@ -1,0 +1,26 @@
+.footer {
+}
+
+.footer__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.ul__li-footer {
+  list-style: none;
+}
+
+.li-footer__anchor:hover {
+  text-decoration: underline;
+  color: var(--link-text-color);
+}
+
+.li-footer__anchor {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+.footer__resourser-info {
+  padding: 5px;
+}

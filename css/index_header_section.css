@@ -34,12 +34,21 @@
 
 .nav-link:hover {
   text-decoration: underline;
-  color: var(--link-text-color);
+  color: var(--text-color);
 }
 
 .container {
   width: 300px;
   max-width: 300px;
+}
+
+.clock {
+  width: 95.4833px;
+  height: 23px;
+  color: var(--header-text-color);
+}
+
+.outter-clock {
 }
 
 @media (min-width: 500px) {
@@ -62,6 +71,10 @@
     justify-content: space-around;
     flex: 1;
   }
+
+  .outter-clock {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -69,11 +82,17 @@
     width: 748px;
     max-width: 768px;
   }
+  .outter-clock {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1180px;
     max-width: 1024px;
+  }
+  .outter-clock {
+    text-align: center;
   }
 }
